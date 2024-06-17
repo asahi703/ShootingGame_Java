@@ -12,7 +12,7 @@ public class Character {
 		y+=vy;
 	}
 	public void draw(MyFrame f) {
-		f.setColor(0, 0, 0);
+		f.setColor(200, 200, 200);
 		f.fillRect(x+10, y, 10, 30);
 	}
 
