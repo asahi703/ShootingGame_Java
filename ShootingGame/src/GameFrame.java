@@ -60,7 +60,7 @@ public class GameFrame extends MyFrame{
 			int j=0;
 			int hits=0;
 			while(j<GameWorld.enemies.size()) {
-				Enemy e=GameWorld.enemies.get(i);
+				Enemy e=GameWorld.enemies.get(j);
 				if(checkHit(e,b)) {
 					System.out.println("あたり");
 					hits++;
@@ -78,11 +78,7 @@ public class GameFrame extends MyFrame{
 	}
 	
 	public boolean checkHit(Character a,Character b) {
-		if(Math.abs(a.x-b.x)<=30 && Math.abs(a.y-b.y)<=30) {
-			return true;
-		}else {
-			return false;
-		}
+		return(Math.abs(a.x-b.x)<=30 && Math.abs(a.y-b.y)<=30) ;
 	}
 	
 }
